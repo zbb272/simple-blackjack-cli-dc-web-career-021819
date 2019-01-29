@@ -37,13 +37,12 @@ def hit?(card_total)
       break
     else
       invalid_command
-      "Please ebter a valid command"
-      hit?(card_total)
     end
 end
 
 def invalid_command
-  # code invalid_command here
+  "Please enter a valid command"
+  hit?(card_total)
 end
 
 #####################################################
