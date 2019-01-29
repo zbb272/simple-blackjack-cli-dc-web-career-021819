@@ -27,8 +27,15 @@ def initial_round
   display_card_total(deal_card + deal_card)
 end
 
-def hit?
-  # code hit? here
+def hit?(card_total)
+  prompt_user
+  user_input = get_user_input
+  case
+    when "h"
+     card_total = display_card_total(card_total + deal_card)
+    when "s"
+      break
+    
 end
 
 def invalid_command
