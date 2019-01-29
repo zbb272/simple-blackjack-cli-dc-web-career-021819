@@ -34,7 +34,7 @@ def hit?(card_total)
     when "h"
      card_total = display_card_total(card_total + deal_card)
     when "s"
-      break
+      
     else
       invalid_command
     end
