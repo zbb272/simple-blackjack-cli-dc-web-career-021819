@@ -35,7 +35,10 @@ def hit?(card_total)
      card_total = display_card_total(card_total + deal_card)
     when "s"
       break
-    
+    else
+      invalid_command
+      "Please ebter a valid command"
+      hit?(card_total)
 end
 
 def invalid_command
